@@ -1,0 +1,515 @@
+/* IMPOSTAZIONI GENERALI */
+
+/* ++++++++++++++++INDEX++++++++++++++++ */
+
+html{
+    display: flex;
+
+}
+
+body {
+    background-color: white;
+    color: #000;
+    font-size:  1.5rem;
+    line-height: 1.8;
+    margin: 0 auto;
+    padding: 1em;
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+h1 {
+    width: 100%;
+    font-size: 4rem;
+    line-height: 1em;
+    margin-bottom: 0.3em;
+    box-sizing: border-box;
+
+}
+h2 {
+    font-size:3.5rem;
+    line-height: 1.1em;
+    margin: 0.3em 0.2em;
+text-align: center;
+}
+h3 {
+    font-size:3.2rem;
+    line-height: 1.2em;
+    margin: 0.3em;
+    text-align: center;
+
+}
+h4 {
+    font-size:2.4rem;
+    line-height: 1.2em;
+    margin: 0.3em;
+    text-align: center;
+}
+
+main p {
+    padding-top: 0.8em;
+}
+
+
+/* HEADER */
+
+
+.container {
+    width: auto;
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgb(226, 226, 226);
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+input#menuButton {
+    display: none;
+
+}
+
+input#menuButton:checked ~ nav {
+    height:200px;
+
+} 
+
+@media screen and (max-width: 768px) {
+    header nav {
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: height 0.5s ease-out;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+
+
+    #menuMobile {
+        display: none;
+    }
+
+    header nav ul {
+        margin-right: 2em;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        margin: 0 0 0 1em;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: grey;
+    }
+
+    header nav ul li a:last-child { /* SE ul:last child NON VA SE ul li a:last child (SBAGLIATO) MA FUNZIONA PERO' RENDE BIANCHI ANCHE GLI ALTRI li. LASCIATO GRIGIO DI PROPOSITO  */
+        text-decoration: none;
+/*         color: white;
+ */     
+        width: fit-content;
+        height: fit-content;
+
+    }
+
+main #diventa h1 {
+margin: 1em;
+    }
+main #diventa p {
+    margin:2em;
+    }
+   
+    main #diventa .pulsanti {
+    margin: 2em;
+     }
+    
+.boxes {
+    width:auto;
+    height: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+vertical-align: text-bottom;
+}
+
+aside div {
+    width: 50%;
+    height: auto;
+}
+
+aside div h3 .lni {
+    font-size: 1em;
+}
+
+footer {
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+vertical-align: text-bottom;
+}
+
+footer .form{
+    width: auto;
+}
+
+footer p{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+main #boxfoto{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    vertical-align: text-bottom;
+}
+
+main #boxfoto .foto{
+width: 25%;
+}
+
+table {
+display: none;
+}
+
+#prezzi{
+    margin: 1em;
+    display: table;
+    
+  }
+
+
+}
+
+
+
+#diventa {
+    color:white;
+    width: auto;
+    height: auto;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit:cover;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: left;
+    box-sizing: border-box;
+    box-shadow: #d3d3d3;
+    text-shadow: 2px 2px 4px black;
+    } 
+
+
+#diventa p{
+    padding: 1em 0;
+}
+
+#diventa .pulsanti {
+    margin-left: 0;
+}
+
+#diventa .pulsanti a {
+    margin-left: 0;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+}
+
+
+.pulsanti {
+    color:white;
+    border: none;
+    outline: none;
+    font-size: 1.9rem;
+    text-shadow: 1px 1px 2px rgb(41,40,40);
+    background: rgb(108,193,226);
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0,1);
+    animation: pulse 2s infinite;
+    width: fit-content;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0,0,0, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px rgba(0,0,0, 0);
+
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0,0,0, 0);
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* MAIN */
+
+main {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+main img {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-basis: auto;
+}
+
+
+main div {
+margin : 2em 1.5em;
+
+}
+
+main div .lni {
+    font-size: 2.5em;
+}
+
+
+
+
+
+
+body .lni {
+    color: red;
+    font-size: 2em;
+}
+
+
+
+ main section div  {
+    margin: 1.5em 1em;
+    width: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items:baseline;
+	align-content: space-between;
+} 
+
+main .lni{
+    font-size: 1em;
+
+}
+
+ 
+
+
+.box4 {
+    margin: 3em auto;
+    background-color: #0c0633;
+    color: white;
+    padding: 5.5em 1em;
+    text-align: center;
+}
+
+.pulsanti
+    {
+        width: fit-content;
+        text-align: center;
+        padding: 0.5em;
+        margin: auto;
+        margin-top: 1em;
+        background: rgb(108,193,226);
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+ }
+
+
+
+
+/* FOOTER */
+
+
+
+footer {
+    color:black;
+    width: 100%;
+    height: auto;
+    background-color: rgb(238, 238, 238);
+    object-fit:cover;
+    margin: auto;
+    padding: 1em 1.2em;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+   }
+
+ footer div .lni {
+    font-size: 1.5em;
+}
+
+
+footer h4{
+    text-align: left;
+
+}
+
+footer p:last-child {
+    font-size:0.7em;
+    margin-bottom: 2em;
+}
+
+footer .form input, a {
+    width: 100%;
+    height: 3em;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    text-decoration: none;
+    border: none;
+   
+} 
+
+.form{
+    margin: auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+}
+
+
+footer input[type="submit"] {
+    width: 100%;
+    height: 3em;
+    box-sizing: border-box;
+    padding: 1em 14em;
+    background: rgb(108,193,226);
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    text-align: center;
+}
+
+
+
+/* RESPONSIVE */
+
+/* --APPUNTI-- */
+/* default mobile, poi con media query: tablet e pc */
+
+/* BOTTONE CHIEDI INFO: scale x scalare e opacità per renderlo
+ trasparente, aumentare bordo e poi dissolvenza 
+
+link menu rossi e sottolineati al passaggio
+
+
+MOBILE E TABLET ci vuole comunque header e footer 
+*/
+
+/* ++++++++++++++++CHI SIAMO++++++++++++++++ */
+
+
+
+
+table {
+    background-color: #d2dce7 ;
+    color: black;
+margin: auto;
+text-align: left;
+}
+
+tr th {
+    height: 4em;
+    background-color: #3990c6;
+    color: white;
+    padding: 1em; 
+text-align: center;
+
+}
+tr td {
+    height: 4em;
+    padding: 1em; 
+ 
+}
+
+#bianche {
+    background-color: white;
+}
+
+
+#prezzi{
+        width: 100%;
+        background-color: #d2dce7;
+        color: #000000; 
+}
+
+
+
+
+/* ++++++++++++++++CONTATTI++++++++++++++++ */
+
+.contatti input {
+    width: 100%;
+    height: 2em;
+    display: block;
+    margin-top: 2em;
+}
+
+#note {
+    height: 7em;
+}
+
+.contatti input::placeholder{
+text-align: left;
+padding-left: 0.4em;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 3em;
+    border: none;
+    box-sizing: border-box;
+    padding: 1em 14em;
+    background: rgb(108,193,226);
+    background: linear-gradient(90deg, rgba(108,193,226,1) 0%, rgba(57,47,122,1) 100%);
+    text-align: center;
+}
